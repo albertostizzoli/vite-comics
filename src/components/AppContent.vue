@@ -8,6 +8,7 @@
 
 <script>
     export default {
+        name: 'AppContent',
         
     }
 </script>
@@ -21,7 +22,7 @@ main{
 
     h2{
         color: $white;
-        padding-top: 30px;
+        padding-top: 35px;
     }
 }
 

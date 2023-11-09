@@ -95,7 +95,7 @@ header {
         li {
             display: inline-block;
             font-size: 15px;
-            padding: 0rem 0.75rem;
+            padding: 10px;
 
             a {
                 color: $black;
