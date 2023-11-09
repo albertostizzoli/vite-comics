@@ -69,6 +69,14 @@
                 </div>
             </div>
         </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <a href="#">SIGN UP NOW!</a>
+                <nav>
+                    <h2>FOLLOW US</h2>
+                </nav>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -119,14 +127,14 @@ footer {
     .top-footer {
         position: relative;
         z-index: 1000;
-        
+
         img {
             width: 40px;
         }
 
         ul {
             list-style-type: none;
-            padding: 30px 10px;
+            padding: 40px 10px;
             @include space-between;
 
             li {
@@ -184,8 +192,34 @@ footer {
                     position: absolute;
                     top: 0;
                     right: 0;
-                    transform: translateY(-20%);
+                    transform: translateY(-25%);
                 }
+            }   
+        } 
+    }
+    .bottom-footer{
+        background-color: #303030;
+        position: relative;
+        z-index: 1000;
+
+        .container{
+            height: 100px;
+            @include space-between;
+
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                padding: 15px;
+                color: $white;
+                border: 3px solid $light-blue;
+
+                &:hover, &:active{
+                    background-color: $light-blue;
+                }
+            }
+
+            h2{
+                color: $light-blue;
             }
         }
     }
