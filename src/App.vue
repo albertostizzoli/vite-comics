@@ -1,18 +1,19 @@
 <template>
-   <AppHeader />
+  <AppHeader />
+  <AppContent />
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue';
-  export default {
-    name: 'App',
-    components: {
-      AppHeader
-    }
-    
+import AppContent from './components/AppContent.vue';
+export default {
+  name: 'App',
+  components: {
+    AppHeader,
+    AppContent
   }
+
+}
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

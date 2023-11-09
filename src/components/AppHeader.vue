@@ -79,31 +79,32 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 @use '../assets/styles/partials/mixins' as *;
 
-header{
+header {
     padding: 1rem;
     @include space-between;
 
-    img{
+    img {
         width: 80px;
     }
 
-    ul{
+    ul {
         list-style-type: none;
         text-transform: uppercase;
         margin-left: 30px;
 
-        li{
+        li {
             display: inline-block;
             font-size: 15px;
             padding: 0rem 0.75rem;
 
-            a{
+            a {
                 color: $black;
                 text-decoration: none;
 
-                &:hover, &:active{
+                &:hover,
+                &:active {
                     color: $light-blue;
-                    border-bottom:  5px solid $light-blue;
+                    border-bottom: 5px solid $light-blue;
                 }
             }
         }
