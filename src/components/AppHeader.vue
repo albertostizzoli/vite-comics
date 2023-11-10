@@ -1,7 +1,7 @@
 <template>
     <header class="container">
         <a href="#">
-            <img src="/img/dc-logo.png" alt="">
+            <img src="/img/dc-logo.png" alt="Logo">
         </a>
         <nav>
             <ul>

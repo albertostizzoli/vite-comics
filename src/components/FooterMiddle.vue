@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="footer-image">
-                <img src="/img/dc-logo-bg.png" alt="">
+                <img src="/img/dc-logo-bg.png" alt="DC Logo">
             </div>
         </div>
     </div>

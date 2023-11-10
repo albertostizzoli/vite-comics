@@ -3,7 +3,7 @@
         <div class="top-footer container">
             <ul>
                 <li v-for="(item, index) in list" :key="index">
-                    <img :src="`/img/${item.image}`" alt="logos">
+                    <img :src="`/img/${item.image}`" alt="icons">
                     <a :href="item.url">{{ item.label }}</a>
                 </li>
             </ul>

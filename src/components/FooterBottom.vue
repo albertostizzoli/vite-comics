@@ -7,7 +7,7 @@
                 <ul>
                     <li v-for="(item, index) in socials" :key="index">
                         <a href="/">
-                            <img :src="`/${item}`" alt="">
+                            <img :src="`/${item}`" alt="Socials">
                         </a>
                     </li>
                 </ul>

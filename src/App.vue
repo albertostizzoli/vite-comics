@@ -21,7 +21,6 @@ export default {
     FooterMiddle,
     FooterBottom
   },
-
 }
 </script>
 
