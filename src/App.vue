@@ -1,19 +1,25 @@
 <template>
   <AppHeader />
   <AppContent />
-  <AppFooter />
+  <FooterTop />
+  <FooterMiddle />
+  <FooterBottom />
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppContent from './components/AppContent.vue';
-import AppFooter from './components/AppFooter.vue';
+import FooterTop from './components/FooterTop.vue';
+import FooterMiddle from './components/FooterMiddle.vue';
+import FooterBottom from './components/FooterBottom.vue';
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppContent,
-    AppFooter
+    FooterTop,
+    FooterMiddle,
+    FooterBottom
   },
 
 }
