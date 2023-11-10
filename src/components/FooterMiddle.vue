@@ -6,20 +6,17 @@
                     <h3>DC COMICS</h3>
                     <nav>
                         <ul>
-                            <li><a href="#">Characters</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">News</a></li>
+                            <li v-for="index in dcComics" :key="index">
+                            {{ index.text }}
+                        </li>
                         </ul>
                     </nav>
                     <h3>SHOP</h3>
                     <nav>
                         <ul>
-                            <li><a href="#">Shop DC</a></li>
-                            <li><a href="#">Shop DC Collectibles</a></li>
+                            <li v-for="index in Shop" :key="index">
+                            {{ index.text }}
+                        </li>
                         </ul>
                     </nav>
                 </div>
@@ -27,18 +24,9 @@
                     <h3>DC</h3>
                     <nav>
                         <ul>
-                            <li><a href="#">Terms Of Use</a></li>
-                            <li><a href="#">Privacy policy (New)</a></li>
-                            <li><a href="#">Ad Chois</a></li>
-                            <li><a href="#">Advertising</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Subscriptions</a></li>
-                            <li><a href="#">Talent Workshop</a></li>
-                            <li><a href="#">CPSC Cerification</a></li>
-                            <li><a href="#">Ratings</a></li>
-                            <li><a href="#">Shop Help</a></li>
-                            <li><a href="#">Contacts Us</a></li>
-
+                            <li v-for="index in DC" :key="index">
+                            {{ index.text }}
+                        </li>
                         </ul>
                     </nav>
                 </div>
@@ -46,11 +34,9 @@
                     <h3>SITES</h3>
                     <nav>
                         <ul>
-                            <li><a href="#">DC</a></li>
-                            <li><a href="#">Mad Magazine</a></li>
-                            <li><a href="#">DC Kids</a></li>
-                            <li><a href="#">DC Universe</a></li>
-                            <li><a href="#">DC Power Visa</a></li>
+                            <li v-for="index in Sites" :key="index">
+                            {{ index.text }}
+                        </li>
                         </ul>
                     </nav>
                 </div>
@@ -65,6 +51,93 @@
 <script>
 export default {
     name:'FooterMiddle',
+    data(){
+        return {
+            dcComics: [
+                {
+                    text: 'Characters'
+                },
+                {
+                    text: 'Comics'
+                },
+                {
+                    text: 'Movies'
+                },
+                {
+                    text: 'TV'
+                },
+                {
+                    text: 'Games'
+                },
+                {
+                    text: 'Videos'
+                },
+                {
+                    text: 'News'
+                },
+               ],
+               Shop:[
+                {
+                    text: 'Shop DC'
+                },
+                {
+                    text: 'Shop DC Collectibles'
+                }
+               ],
+               DC:[
+                {
+                    text: 'Terms Of Use',
+                },
+                {
+                    text: 'Privacy policy (New)',
+                },
+                {
+                    text: 'Ad Choices',
+                },
+                {
+                    text: 'Advertising',
+                },
+                {
+                    text: 'Jobs',
+                },
+                {
+                    text: 'Subscriptions',
+                },
+                {
+                    text: 'Talent Workshops',
+                },
+                {
+                    text: 'CPSC Certificates',
+                },
+                {
+                    text: 'Ratings',
+                },
+                {
+                    text: 'Shop Help',
+                },
+                {
+                    text: 'Contact Us',
+                },
+               ],
+               Sites: [
+                {
+                    text: 'DC',
+                },
+                {
+                    text: 'MAD Magazine',
+                },
+                {
+                    text: 'DC Kids',
+                },
+                {
+                    text: 'DC Universe',
+                },
+                {
+                    text: 'DC Power Visa',
+                },
+               ]
+        }
+    }
 
 }
 </script>
@@ -91,13 +164,13 @@ export default {
                 ul {
                     list-style-type: none;
 
-                    li a {
-                        text-decoration: none;
+                    li{
                         color: $grey;
 
                         &:hover,
                         &:active {
                             color: $white;
+                            cursor: pointer;
                         }
                     }
                 }
